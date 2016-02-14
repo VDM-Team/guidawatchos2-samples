@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2cl-yj-Thb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Recorder-->
+        <scene sceneID="Olf-T6-G1r">
+            <objects>
+                <controller title="Recorder" id="2cl-yj-Thb" customClass="InterfaceController">
+                    <items>
+                        <button width="80" height="50" alignment="center" verticalAlignment="center" title="Record" id="1ii-5T-uws">
+                            <connections>
+                                <action selector="actionRecorder" destination="2cl-yj-Thb" id="3UE-a9-Epi"/>
+                            </connections>
+                        </button>
+                        <button width="80" height="50" alignment="center" verticalAlignment="center" title="Play" id="Bok-5W-aPB">
+                            <connections>
+                                <action selector="actionPlay" destination="2cl-yj-Thb" id="yNm-7l-SaU"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

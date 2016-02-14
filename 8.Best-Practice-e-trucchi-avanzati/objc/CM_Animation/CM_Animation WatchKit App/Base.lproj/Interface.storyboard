@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t11-Qe-OVJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="0QY-yZ-C8L">
+            <objects>
+                <controller id="t11-Qe-OVJ" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="icW-gY-EKx">
+                            <items>
+                                <button width="50" height="50" alignment="center" verticalAlignment="center" backgroundImage="logo" id="lzA-K5-UGy">
+                                    <connections>
+                                        <action selector="actionZoom" destination="t11-Qe-OVJ" id="aEQ-ym-UiD"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="bottom" text="Click Me !!!" id="0EN-yl-Oqa"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnMela" destination="lzA-K5-UGy" id="Ih9-FD-jOU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="326" y="277"/>
+        </scene>
+    </scenes>
+</document>
