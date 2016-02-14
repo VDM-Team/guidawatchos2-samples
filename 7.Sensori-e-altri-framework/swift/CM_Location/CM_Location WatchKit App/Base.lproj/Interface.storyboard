@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9527.1" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9513.1"/>
+    </dependencies>
+    <scenes>
+        <!--Location-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="LocationController" title="Location" alwaysBounce="YES" id="AgC-eL-Hgc" customClass="LocationController" customModule="CM_Location_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="LAt-Q0-pBY" userLabel="Permission ON">
+                            <items>
+                                <label height="0.10000000000000001" alignment="center" text="Loading..." textAlignment="center" id="2bz-ab-Kjf">
+                                    <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                </label>
+                                <map width="1" height="0.59999999999999998" alignment="left" id="PXS-jf-W1a"/>
+                                <group width="1" alignment="left" id="XNf-4n-h2H">
+                                    <items>
+                                        <button width="0.33300000000000002" alignment="left" title="+" id="5Kk-0P-Jzc">
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                                            <connections>
+                                                <action selector="actionZoomIN" destination="AgC-eL-Hgc" id="xDb-BC-f2D"/>
+                                            </connections>
+                                        </button>
+                                        <group width="0.33300000000000002" alignment="left" id="mbx-7k-osp">
+                                            <items>
+                                                <button width="50" height="50" alignment="center" verticalAlignment="center" backgroundImage="Center" id="fGn-UH-A6G">
+                                                    <connections>
+                                                        <action selector="actionRequestLocation" destination="AgC-eL-Hgc" id="yId-cq-Xfd"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <button width="0.33300000000000002" alignment="left" title="-" id="0Wb-AY-Bc7">
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                                            <connections>
+                                                <action selector="actionZoomOUT" destination="AgC-eL-Hgc" id="Hg8-Ia-AN7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="100" alignment="center" hidden="YES" id="NAc-GT-Nwb" userLabel="Permission OFF">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Il GPS non è disponibile attualmente" textAlignment="center" numberOfLines="0" id="XLg-yj-99b">
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="groupPermissionOFF" destination="NAc-GT-Nwb" id="z76-ey-TH2"/>
+                        <outlet property="groupPermissionON" destination="LAt-Q0-pBY" id="t3b-96-cgy"/>
+                        <outlet property="loadingLabel" destination="2bz-ab-Kjf" id="lkS-u2-IcP"/>
+                        <outlet property="map" destination="PXS-jf-W1a" id="5Ja-3p-UVf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="527" y="345.5"/>
+        </scene>
+    </scenes>
+</document>

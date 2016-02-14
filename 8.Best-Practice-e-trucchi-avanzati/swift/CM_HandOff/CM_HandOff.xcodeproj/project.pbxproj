@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DC7A58B1C06576B00C908E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7A58A1C06576B00C908E5 /* AppDelegate.swift */; };
+		2DC7A58D1C06576B00C908E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7A58C1C06576B00C908E5 /* ViewController.swift */; };
+		2DC7A5901C06576B00C908E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A58E1C06576B00C908E5 /* Main.storyboard */; };
+		2DC7A5921C06576B00C908E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A5911C06576B00C908E5 /* Assets.xcassets */; };
+		2DC7A5951C06576B00C908E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A5931C06576B00C908E5 /* LaunchScreen.storyboard */; };
+		2DC7A59A1C06576B00C908E5 /* CM_HandOff WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2DC7A5991C06576B00C908E5 /* CM_HandOff WatchKit App.app */; };
+		2DC7A5A01C06576B00C908E5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A59E1C06576B00C908E5 /* Interface.storyboard */; };
+		2DC7A5A21C06576B00C908E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A5A11C06576B00C908E5 /* Assets.xcassets */; };
+		2DC7A5A91C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DC7A5A81C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2DC7A5AE1C06576B00C908E5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7A5AD1C06576B00C908E5 /* InterfaceController.swift */; };
+		2DC7A5B01C06576B00C908E5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7A5AF1C06576B00C908E5 /* ExtensionDelegate.swift */; };
+		2DC7A5B21C06576B00C908E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7A5B11C06576B00C908E5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DC7A59B1C06576B00C908E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC7A57F1C06576B00C908E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DC7A5981C06576B00C908E5;
+			remoteInfo = "CM_HandOff WatchKit App";
+		};
+		2DC7A5AA1C06576B00C908E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC7A57F1C06576B00C908E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DC7A5A71C06576B00C908E5;
+			remoteInfo = "CM_HandOff WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DC7A5B91C06576B00C908E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2DC7A5A91C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC7A5BD1C06576B00C908E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2DC7A59A1C06576B00C908E5 /* CM_HandOff WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2DC7A5871C06576B00C908E5 /* CM_HandOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM_HandOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC7A58A1C06576B00C908E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DC7A58C1C06576B00C908E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DC7A58F1C06576B00C908E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DC7A5911C06576B00C908E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DC7A5941C06576B00C908E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DC7A5961C06576B00C908E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC7A5991C06576B00C908E5 /* CM_HandOff WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM_HandOff WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC7A59F1C06576B00C908E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2DC7A5A11C06576B00C908E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DC7A5A31C06576B00C908E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC7A5A81C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CM_HandOff WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC7A5AD1C06576B00C908E5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2DC7A5AF1C06576B00C908E5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2DC7A5B11C06576B00C908E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DC7A5B31C06576B00C908E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DC7A5841C06576B00C908E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC7A5A51C06576B00C908E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DC7A57E1C06576B00C908E5 = {
+			isa = PBXGroup;
+			children = (
+				2DC7A5891C06576B00C908E5 /* CM_HandOff */,
+				2DC7A59D1C06576B00C908E5 /* CM_HandOff WatchKit App */,
+				2DC7A5AC1C06576B00C908E5 /* CM_HandOff WatchKit Extension */,
+				2DC7A5881C06576B00C908E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DC7A5881C06576B00C908E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7A5871C06576B00C908E5 /* CM_HandOff.app */,
+				2DC7A5991C06576B00C908E5 /* CM_HandOff WatchKit App.app */,
+				2DC7A5A81C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DC7A5891C06576B00C908E5 /* CM_HandOff */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7A58A1C06576B00C908E5 /* AppDelegate.swift */,
+				2DC7A58C1C06576B00C908E5 /* ViewController.swift */,
+				2DC7A58E1C06576B00C908E5 /* Main.storyboard */,
+				2DC7A5911C06576B00C908E5 /* Assets.xcassets */,
+				2DC7A5931C06576B00C908E5 /* LaunchScreen.storyboard */,
+				2DC7A5961C06576B00C908E5 /* Info.plist */,
+			);
+			path = CM_HandOff;
+			sourceTree = "<group>";
+		};
+		2DC7A59D1C06576B00C908E5 /* CM_HandOff WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7A59E1C06576B00C908E5 /* Interface.storyboard */,
+				2DC7A5A11C06576B00C908E5 /* Assets.xcassets */,
+				2DC7A5A31C06576B00C908E5 /* Info.plist */,
+			);
+			path = "CM_HandOff WatchKit App";
+			sourceTree = "<group>";
+		};
+		2DC7A5AC1C06576B00C908E5 /* CM_HandOff WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7A5AD1C06576B00C908E5 /* InterfaceController.swift */,
+				2DC7A5AF1C06576B00C908E5 /* ExtensionDelegate.swift */,
+				2DC7A5B11C06576B00C908E5 /* Assets.xcassets */,
+				2DC7A5B31C06576B00C908E5 /* Info.plist */,
+			);
+			path = "CM_HandOff WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DC7A5861C06576B00C908E5 /* CM_HandOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DC7A5BE1C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff" */;
+			buildPhases = (
+				2DC7A5831C06576B00C908E5 /* Sources */,
+				2DC7A5841C06576B00C908E5 /* Frameworks */,
+				2DC7A5851C06576B00C908E5 /* Resources */,
+				2DC7A5BD1C06576B00C908E5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DC7A59C1C06576B00C908E5 /* PBXTargetDependency */,
+			);
+			name = CM_HandOff;
+			productName = CM_HandOff;
+			productReference = 2DC7A5871C06576B00C908E5 /* CM_HandOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DC7A5981C06576B00C908E5 /* CM_HandOff WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DC7A5BA1C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff WatchKit App" */;
+			buildPhases = (
+				2DC7A5971C06576B00C908E5 /* Resources */,
+				2DC7A5B91C06576B00C908E5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DC7A5AB1C06576B00C908E5 /* PBXTargetDependency */,
+			);
+			name = "CM_HandOff WatchKit App";
+			productName = "CM_HandOff WatchKit App";
+			productReference = 2DC7A5991C06576B00C908E5 /* CM_HandOff WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2DC7A5A71C06576B00C908E5 /* CM_HandOff WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DC7A5B61C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff WatchKit Extension" */;
+			buildPhases = (
+				2DC7A5A41C06576B00C908E5 /* Sources */,
+				2DC7A5A51C06576B00C908E5 /* Frameworks */,
+				2DC7A5A61C06576B00C908E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CM_HandOff WatchKit Extension";
+			productName = "CM_HandOff WatchKit Extension";
+			productReference = 2DC7A5A81C06576B00C908E5 /* CM_HandOff WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DC7A57F1C06576B00C908E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "WhiteTiger \"sgama la rete\"";
+				TargetAttributes = {
+					2DC7A5861C06576B00C908E5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DC7A5981C06576B00C908E5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DC7A5A71C06576B00C908E5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2DC7A5821C06576B00C908E5 /* Build configuration list for PBXProject "CM_HandOff" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DC7A57E1C06576B00C908E5;
+			productRefGroup = 2DC7A5881C06576B00C908E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DC7A5861C06576B00C908E5 /* CM_HandOff */,
+				2DC7A5981C06576B00C908E5 /* CM_HandOff WatchKit App */,
+				2DC7A5A71C06576B00C908E5 /* CM_HandOff WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DC7A5851C06576B00C908E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7A5951C06576B00C908E5 /* LaunchScreen.storyboard in Resources */,
+				2DC7A5921C06576B00C908E5 /* Assets.xcassets in Resources */,
+				2DC7A5901C06576B00C908E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC7A5971C06576B00C908E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7A5A21C06576B00C908E5 /* Assets.xcassets in Resources */,
+				2DC7A5A01C06576B00C908E5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC7A5A61C06576B00C908E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7A5B21C06576B00C908E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DC7A5831C06576B00C908E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7A58D1C06576B00C908E5 /* ViewController.swift in Sources */,
+				2DC7A58B1C06576B00C908E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC7A5A41C06576B00C908E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7A5B01C06576B00C908E5 /* ExtensionDelegate.swift in Sources */,
+				2DC7A5AE1C06576B00C908E5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DC7A59C1C06576B00C908E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DC7A5981C06576B00C908E5 /* CM_HandOff WatchKit App */;
+			targetProxy = 2DC7A59B1C06576B00C908E5 /* PBXContainerItemProxy */;
+		};
+		2DC7A5AB1C06576B00C908E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DC7A5A71C06576B00C908E5 /* CM_HandOff WatchKit Extension */;
+			targetProxy = 2DC7A5AA1C06576B00C908E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DC7A58E1C06576B00C908E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DC7A58F1C06576B00C908E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DC7A5931C06576B00C908E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DC7A5941C06576B00C908E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DC7A59E1C06576B00C908E5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DC7A59F1C06576B00C908E5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DC7A5B41C06576B00C908E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DC7A5B51C06576B00C908E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DC7A5B71C06576B00C908E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CM_HandOff WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DC7A5B81C06576B00C908E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CM_HandOff WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DC7A5BB1C06576B00C908E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_HandOff_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_HandOff WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DC7A5BC1C06576B00C908E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_HandOff_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_HandOff WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DC7A5BF1C06576B00C908E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_HandOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DC7A5C01C06576B00C908E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_HandOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HandOff";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DC7A5821C06576B00C908E5 /* Build configuration list for PBXProject "CM_HandOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC7A5B41C06576B00C908E5 /* Debug */,
+				2DC7A5B51C06576B00C908E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DC7A5B61C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC7A5B71C06576B00C908E5 /* Debug */,
+				2DC7A5B81C06576B00C908E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DC7A5BA1C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC7A5BB1C06576B00C908E5 /* Debug */,
+				2DC7A5BC1C06576B00C908E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DC7A5BE1C06576B00C908E5 /* Build configuration list for PBXNativeTarget "CM_HandOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC7A5BF1C06576B00C908E5 /* Debug */,
+				2DC7A5C01C06576B00C908E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DC7A57F1C06576B00C908E5 /* Project object */;
+}

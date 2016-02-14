@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9527.1" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9513.1"/>
+    </dependencies>
+    <scenes>
+        <!--HealthKit-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="HealthKitController" title="HealthKit" alwaysBounce="YES" id="AgC-eL-Hgc" customClass="HealthKitController" customModule="CM_HealthKit_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="yDF-T7-cIk" userLabel="Permission ON">
+                            <items>
+                                <group width="1" height="0.69999999999999996" alignment="left" layout="vertical" id="8ap-Qq-iDG">
+                                    <items>
+                                        <group width="1" height="0.80000000000000004" alignment="center" layout="vertical" id="YHG-Bi-Hjr">
+                                            <items>
+                                                <group width="1" height="1" alignment="left" id="lN3-3Y-Rmx">
+                                                    <items>
+                                                        <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="heart" id="nm6-Mp-hyb"/>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="0.20000000000000001" alignment="center" spacing="5" id="gte-tr-KCh">
+                                            <items>
+                                                <label alignment="center" verticalAlignment="center" text="---" id="RRY-FN-7ng">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                </label>
+                                                <label alignment="center" text="BPM" id="UFZ-DC-dbP">
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <button width="1" height="0.29999999999999999" alignment="center" title="Start" id="X9m-Iu-2ed">
+                                    <connections>
+                                        <action selector="actionStartStopHK" destination="AgC-eL-Hgc" id="Dqy-pC-cfn"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="1" alignment="left" hidden="YES" id="evB-gB-g14" userLabel="Permission OFF">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="HealthKit non è avviabile" textAlignment="center" numberOfLines="0" id="NhM-bF-Uy7">
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="actionButton" destination="X9m-Iu-2ed" id="Ktz-bw-Zwq"/>
+                        <outlet property="grpPermissionOFF" destination="evB-gB-g14" id="kQx-Bh-jIQ"/>
+                        <outlet property="grpPermissionON" destination="yDF-T7-cIk" id="qKC-FD-yYk"/>
+                        <outlet property="heartImage" destination="nm6-Mp-hyb" id="f1e-y9-cKO"/>
+                        <outlet property="rateLabel" destination="RRY-FN-7ng" id="Rym-na-A40"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.28235294119999998" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+</document>

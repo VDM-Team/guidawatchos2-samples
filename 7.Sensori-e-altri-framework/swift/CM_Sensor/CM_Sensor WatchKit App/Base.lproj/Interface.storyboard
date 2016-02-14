@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kli-Yy-7q9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="T0k-68-yAa">
+            <objects>
+                <controller identifier="Main" title="Main" alwaysBounce="YES" id="kli-Yy-7q9">
+                    <items>
+                        <button width="1" height="0.33000000000000002" alignment="center" verticalAlignment="center" title="Live" id="epv-kp-j64">
+                            <color key="backgroundColor" red="0.70904356059999996" green="0.0932364309" blue="0.05376832132" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="A78-Z2-eUl"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="center" verticalAlignment="center" title="Hystorical" id="tQ2-Cs-MDi">
+                            <color key="backgroundColor" red="0.70904356059999996" green="0.0932364309" blue="0.05376832132" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ZDj-sH-EiF" kind="push" id="Iga-Mc-ySW"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="center" verticalAlignment="center" title="Accelerate" id="7Z6-Yh-atg">
+                            <color key="backgroundColor" red="0.70904356059999996" green="0.0932364309" blue="0.05376832132" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="tVP-I1-wDs" kind="push" id="aaa-o4-xu8"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="281" y="230"/>
+        </scene>
+        <!--Accelerate-->
+        <scene sceneID="f0M-LS-Lmi">
+            <objects>
+                <controller identifier="AccelerateController" title="Accelerate" alwaysBounce="YES" id="tVP-I1-wDs" customClass="AccelerateController" customModule="CM_Sensor_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="Ebm-EB-eGO">
+                            <items>
+                                <imageView width="35" height="35" alignment="left" image="boo" id="y9G-6g-AlV"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="Ebm-EB-eGO" id="bYJ-eB-7LQ"/>
+                        <outlet property="image" destination="y9G-6g-AlV" id="L3c-S2-MXG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="281" y="658"/>
+        </scene>
+        <!--Live-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="LiveController" title="Live" alwaysBounce="YES" id="AgC-eL-Hgc" customClass="LiveController" customModule="CM_Sensor_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="zXz-LH-nZG">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="standing" id="t3r-16-VEA" userLabel="imgActivity"/>
+                                <group width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="ACe-Vw-ntg" userLabel="Group Stats">
+                                    <items>
+                                        <group width="1" height="0.25" alignment="left" spacing="2" id="tRe-WJ-U0q">
+                                            <items>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" text="Steps:" id="5U4-Sl-CF4">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" id="XTn-JG-CsB">
+                                                    <fontDescription key="font" type="system" weight="thin" pointSize="15"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.79632260101010099" green="0.10945462553823415" blue="0.065763518751844191" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.25" alignment="left" spacing="2" id="XV1-oH-P0n">
+                                            <items>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" text="Distance:" id="34z-KU-dfJ">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" id="6pt-9b-beZ">
+                                                    <fontDescription key="font" type="system" weight="thin" pointSize="15"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.55668008209999997" green="0.076515736020000003" blue="0.045972877029999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.25" alignment="left" spacing="2" id="GUy-Tt-U87">
+                                            <items>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" text="Floors:" id="hjT-xR-VTl">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" id="aeb-6w-cEv">
+                                                    <fontDescription key="font" type="system" weight="thin" pointSize="15"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.79632260099999996" green="0.1094546255" blue="0.06576351875" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.25" alignment="left" spacing="2" id="S5v-x7-aBi">
+                                            <items>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" text="Altitude:" id="VFO-ZX-NrD">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" id="FdM-Ai-nDY">
+                                                    <fontDescription key="font" type="system" weight="thin" pointSize="15"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.55668008209999997" green="0.076515736020000003" blue="0.045972877029999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="altitudeLabel" destination="FdM-Ai-nDY" id="gre-6i-jSx"/>
+                        <outlet property="distanceLabel" destination="6pt-9b-beZ" id="L9e-K3-Ex3"/>
+                        <outlet property="floorsLabel" destination="aeb-6w-cEv" id="2kN-ew-QXD"/>
+                        <outlet property="imageActivity" destination="t3r-16-VEA" id="ery-pn-Rwk"/>
+                        <outlet property="stepsLabel" destination="XTn-JG-CsB" id="pe4-6O-yng"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="493" y="481"/>
+        </scene>
+        <!--Hystorical-->
+        <scene sceneID="kuS-v1-Yf5">
+            <objects>
+                <controller identifier="Historycal" title="Hystorical" alwaysBounce="YES" id="ZDj-sH-EiF" customClass="HystorycalController" customModule="CM_Sensor_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" id="BpX-1v-dQT" userLabel="Group Permission ON">
+                            <items>
+                                <table alignment="center" id="Y7o-Sq-7XI" userLabel="hystorycalTable">
+                                    <items>
+                                        <tableRow identifier="cell.hystorycal" id="q8w-Sf-aB3" customClass="hystorycalCell" customModule="CM_Sensor_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" spacing="5" id="Wh3-zW-9Cf">
+                                                <items>
+                                                    <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" id="IX0-hA-mVd">
+                                                        <items>
+                                                            <imageView alignment="left" id="Xiw-Ey-xbc" userLabel="imageActivity"/>
+                                                        </items>
+                                                    </group>
+                                                    <group width="0.69999999999999996" alignment="left" layout="vertical" id="RaM-eJ-eYr">
+                                                        <items>
+                                                            <label height="0.5" alignment="left" id="jOh-co-UFq" userLabel="startDate">
+                                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                            <label height="0.5" alignment="left" id="J9N-9z-1mL" userLabel="distance">
+                                                                <color key="textColor" red="1" green="0.99033717109999997" blue="0.26975523379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="distance" destination="J9N-9z-1mL" id="oSi-Dr-yZm"/>
+                                                <outlet property="imageActivity" destination="Xiw-Ey-xbc" id="LXW-bl-Xjn"/>
+                                                <outlet property="startDate" destination="jOh-co-UFq" id="bcJ-Qt-oJd"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" hidden="YES" layout="vertical" id="9rp-IQ-0dC" userLabel="Group Permission OFF">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="j2l-LR-LXR" userLabel="messageLbl">
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="wky-p4-QuO">
+                        <items>
+                            <menuItem title="Aggiornamento" icon="repeat" id="iBp-Is-gSh" userLabel="update">
+                                <connections>
+                                    <action selector="actionUpdate" destination="ZDj-sH-EiF" id="9DE-g3-jJg"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="groupPermissionOFF" destination="9rp-IQ-0dC" id="ZIf-v9-FrN"/>
+                        <outlet property="groupPermissionON" destination="BpX-1v-dQT" id="XbQ-TE-fnR"/>
+                        <outlet property="hystorycalTable" destination="Y7o-Sq-7XI" id="xB1-Ks-eBB"/>
+                        <outlet property="messageLbl" destination="j2l-LR-LXR" id="O7Y-Ib-5Yg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="63" y="481"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>

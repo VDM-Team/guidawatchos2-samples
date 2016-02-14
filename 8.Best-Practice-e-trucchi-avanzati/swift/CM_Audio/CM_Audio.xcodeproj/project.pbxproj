@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA72BD91C03BD5B001E3156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA72BD81C03BD5B001E3156 /* AppDelegate.swift */; };
+		2DA72BDB1C03BD5B001E3156 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA72BDA1C03BD5B001E3156 /* ViewController.swift */; };
+		2DA72BDE1C03BD5B001E3156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BDC1C03BD5B001E3156 /* Main.storyboard */; };
+		2DA72BE01C03BD5B001E3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BDF1C03BD5B001E3156 /* Assets.xcassets */; };
+		2DA72BE31C03BD5B001E3156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BE11C03BD5B001E3156 /* LaunchScreen.storyboard */; };
+		2DA72BE81C03BD5B001E3156 /* CM_Audio WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2DA72BE71C03BD5B001E3156 /* CM_Audio WatchKit App.app */; };
+		2DA72BEE1C03BD5B001E3156 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BEC1C03BD5B001E3156 /* Interface.storyboard */; };
+		2DA72BF01C03BD5B001E3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BEF1C03BD5B001E3156 /* Assets.xcassets */; };
+		2DA72BF71C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DA72BF61C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2DA72BFC1C03BD5B001E3156 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA72BFB1C03BD5B001E3156 /* InterfaceController.swift */; };
+		2DA72BFE1C03BD5B001E3156 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA72BFD1C03BD5B001E3156 /* ExtensionDelegate.swift */; };
+		2DA72C001C03BD5B001E3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA72BFF1C03BD5B001E3156 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DA72BE91C03BD5B001E3156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA72BCD1C03BD5B001E3156 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA72BE61C03BD5B001E3156;
+			remoteInfo = "CM_Audio WatchKit App";
+		};
+		2DA72BF81C03BD5B001E3156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA72BCD1C03BD5B001E3156 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA72BF51C03BD5B001E3156;
+			remoteInfo = "CM_Audio WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DA72C071C03BD5B001E3156 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2DA72BF71C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA72C0B1C03BD5B001E3156 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2DA72BE81C03BD5B001E3156 /* CM_Audio WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2DA72BD51C03BD5B001E3156 /* CM_Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM_Audio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA72BD81C03BD5B001E3156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DA72BDA1C03BD5B001E3156 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DA72BDD1C03BD5B001E3156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA72BDF1C03BD5B001E3156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA72BE21C03BD5B001E3156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DA72BE41C03BD5B001E3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA72BE71C03BD5B001E3156 /* CM_Audio WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM_Audio WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA72BED1C03BD5B001E3156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2DA72BEF1C03BD5B001E3156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA72BF11C03BD5B001E3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA72BF61C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CM_Audio WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA72BFB1C03BD5B001E3156 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2DA72BFD1C03BD5B001E3156 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2DA72BFF1C03BD5B001E3156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA72C011C03BD5B001E3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA72C0F1C03C160001E3156 /* CM_Audio WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "CM_Audio WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA72BD21C03BD5B001E3156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA72BF31C03BD5B001E3156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA72BCC1C03BD5B001E3156 = {
+			isa = PBXGroup;
+			children = (
+				2DA72BD71C03BD5B001E3156 /* CM_Audio */,
+				2DA72BEB1C03BD5B001E3156 /* CM_Audio WatchKit App */,
+				2DA72BFA1C03BD5B001E3156 /* CM_Audio WatchKit Extension */,
+				2DA72BD61C03BD5B001E3156 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA72BD61C03BD5B001E3156 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA72BD51C03BD5B001E3156 /* CM_Audio.app */,
+				2DA72BE71C03BD5B001E3156 /* CM_Audio WatchKit App.app */,
+				2DA72BF61C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA72BD71C03BD5B001E3156 /* CM_Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2DA72BD81C03BD5B001E3156 /* AppDelegate.swift */,
+				2DA72BDA1C03BD5B001E3156 /* ViewController.swift */,
+				2DA72BDC1C03BD5B001E3156 /* Main.storyboard */,
+				2DA72BDF1C03BD5B001E3156 /* Assets.xcassets */,
+				2DA72BE11C03BD5B001E3156 /* LaunchScreen.storyboard */,
+				2DA72BE41C03BD5B001E3156 /* Info.plist */,
+			);
+			path = CM_Audio;
+			sourceTree = "<group>";
+		};
+		2DA72BEB1C03BD5B001E3156 /* CM_Audio WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2DA72BEC1C03BD5B001E3156 /* Interface.storyboard */,
+				2DA72BEF1C03BD5B001E3156 /* Assets.xcassets */,
+				2DA72BF11C03BD5B001E3156 /* Info.plist */,
+			);
+			path = "CM_Audio WatchKit App";
+			sourceTree = "<group>";
+		};
+		2DA72BFA1C03BD5B001E3156 /* CM_Audio WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DA72C0F1C03C160001E3156 /* CM_Audio WatchKit Extension.entitlements */,
+				2DA72BFB1C03BD5B001E3156 /* InterfaceController.swift */,
+				2DA72BFD1C03BD5B001E3156 /* ExtensionDelegate.swift */,
+				2DA72BFF1C03BD5B001E3156 /* Assets.xcassets */,
+				2DA72C011C03BD5B001E3156 /* Info.plist */,
+			);
+			path = "CM_Audio WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA72BD41C03BD5B001E3156 /* CM_Audio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA72C0C1C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio" */;
+			buildPhases = (
+				2DA72BD11C03BD5B001E3156 /* Sources */,
+				2DA72BD21C03BD5B001E3156 /* Frameworks */,
+				2DA72BD31C03BD5B001E3156 /* Resources */,
+				2DA72C0B1C03BD5B001E3156 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA72BEA1C03BD5B001E3156 /* PBXTargetDependency */,
+			);
+			name = CM_Audio;
+			productName = CM_Audio;
+			productReference = 2DA72BD51C03BD5B001E3156 /* CM_Audio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DA72BE61C03BD5B001E3156 /* CM_Audio WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA72C081C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio WatchKit App" */;
+			buildPhases = (
+				2DA72BE51C03BD5B001E3156 /* Resources */,
+				2DA72C071C03BD5B001E3156 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA72BF91C03BD5B001E3156 /* PBXTargetDependency */,
+			);
+			name = "CM_Audio WatchKit App";
+			productName = "CM_Audio WatchKit App";
+			productReference = 2DA72BE71C03BD5B001E3156 /* CM_Audio WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2DA72BF51C03BD5B001E3156 /* CM_Audio WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA72C041C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio WatchKit Extension" */;
+			buildPhases = (
+				2DA72BF21C03BD5B001E3156 /* Sources */,
+				2DA72BF31C03BD5B001E3156 /* Frameworks */,
+				2DA72BF41C03BD5B001E3156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CM_Audio WatchKit Extension";
+			productName = "CM_Audio WatchKit Extension";
+			productReference = 2DA72BF61C03BD5B001E3156 /* CM_Audio WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA72BCD1C03BD5B001E3156 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "WhiteTiger \"sgama la rete\"";
+				TargetAttributes = {
+					2DA72BD41C03BD5B001E3156 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DA72BE61C03BD5B001E3156 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DA72BF51C03BD5B001E3156 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W242LE97PH;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2DA72BD01C03BD5B001E3156 /* Build configuration list for PBXProject "CM_Audio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA72BCC1C03BD5B001E3156;
+			productRefGroup = 2DA72BD61C03BD5B001E3156 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA72BD41C03BD5B001E3156 /* CM_Audio */,
+				2DA72BE61C03BD5B001E3156 /* CM_Audio WatchKit App */,
+				2DA72BF51C03BD5B001E3156 /* CM_Audio WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA72BD31C03BD5B001E3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA72BE31C03BD5B001E3156 /* LaunchScreen.storyboard in Resources */,
+				2DA72BE01C03BD5B001E3156 /* Assets.xcassets in Resources */,
+				2DA72BDE1C03BD5B001E3156 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA72BE51C03BD5B001E3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA72BF01C03BD5B001E3156 /* Assets.xcassets in Resources */,
+				2DA72BEE1C03BD5B001E3156 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA72BF41C03BD5B001E3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA72C001C03BD5B001E3156 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA72BD11C03BD5B001E3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA72BDB1C03BD5B001E3156 /* ViewController.swift in Sources */,
+				2DA72BD91C03BD5B001E3156 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA72BF21C03BD5B001E3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA72BFE1C03BD5B001E3156 /* ExtensionDelegate.swift in Sources */,
+				2DA72BFC1C03BD5B001E3156 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DA72BEA1C03BD5B001E3156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA72BE61C03BD5B001E3156 /* CM_Audio WatchKit App */;
+			targetProxy = 2DA72BE91C03BD5B001E3156 /* PBXContainerItemProxy */;
+		};
+		2DA72BF91C03BD5B001E3156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA72BF51C03BD5B001E3156 /* CM_Audio WatchKit Extension */;
+			targetProxy = 2DA72BF81C03BD5B001E3156 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DA72BDC1C03BD5B001E3156 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA72BDD1C03BD5B001E3156 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA72BE11C03BD5B001E3156 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA72BE21C03BD5B001E3156 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA72BEC1C03BD5B001E3156 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA72BED1C03BD5B001E3156 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA72C021C03BD5B001E3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA72C031C03BD5B001E3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA72C051C03BD5B001E3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CM_Audio WatchKit Extension/CM_Audio WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CM_Audio WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DA72C061C03BD5B001E3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CM_Audio WatchKit Extension/CM_Audio WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CM_Audio WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DA72C091C03BD5B001E3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_Audio_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_Audio WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DA72C0A1C03BD5B001E3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_Audio_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_Audio WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DA72C0D1C03BD5B001E3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_Audio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DA72C0E1C03BD5B001E3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_Audio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA72BD01C03BD5B001E3156 /* Build configuration list for PBXProject "CM_Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA72C021C03BD5B001E3156 /* Debug */,
+				2DA72C031C03BD5B001E3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA72C041C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA72C051C03BD5B001E3156 /* Debug */,
+				2DA72C061C03BD5B001E3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA72C081C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA72C091C03BD5B001E3156 /* Debug */,
+				2DA72C0A1C03BD5B001E3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA72C0C1C03BD5B001E3156 /* Build configuration list for PBXNativeTarget "CM_Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA72C0D1C03BD5B001E3156 /* Debug */,
+				2DA72C0E1C03BD5B001E3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA72BCD1C03BD5B001E3156 /* Project object */;
+}

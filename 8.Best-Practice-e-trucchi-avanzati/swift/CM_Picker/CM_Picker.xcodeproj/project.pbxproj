@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA72BCB1C03B4A8001E3156 /* CoordinatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA72BCA1C03B4A8001E3156 /* CoordinatorController.swift */; };
+		2DCC15381C01E1C700BDA1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC15371C01E1C700BDA1EB /* AppDelegate.swift */; };
+		2DCC153A1C01E1C700BDA1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC15391C01E1C700BDA1EB /* ViewController.swift */; };
+		2DCC153D1C01E1C700BDA1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC153B1C01E1C700BDA1EB /* Main.storyboard */; };
+		2DCC153F1C01E1C700BDA1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC153E1C01E1C700BDA1EB /* Assets.xcassets */; };
+		2DCC15421C01E1C700BDA1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC15401C01E1C700BDA1EB /* LaunchScreen.storyboard */; };
+		2DCC15471C01E1C700BDA1EB /* CM_Picker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2DCC15461C01E1C700BDA1EB /* CM_Picker WatchKit App.app */; };
+		2DCC154D1C01E1C700BDA1EB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC154B1C01E1C700BDA1EB /* Interface.storyboard */; };
+		2DCC154F1C01E1C700BDA1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC154E1C01E1C700BDA1EB /* Assets.xcassets */; };
+		2DCC15561C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DCC15551C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2DCC155B1C01E1C700BDA1EB /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC155A1C01E1C700BDA1EB /* ListController.swift */; };
+		2DCC155D1C01E1C700BDA1EB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC155C1C01E1C700BDA1EB /* ExtensionDelegate.swift */; };
+		2DCC155F1C01E1C700BDA1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC155E1C01E1C700BDA1EB /* Assets.xcassets */; };
+		2DCC15701C01E28B00BDA1EB /* SequenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC156E1C01E28B00BDA1EB /* SequenceController.swift */; };
+		2DCC15711C01E28B00BDA1EB /* StackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC156F1C01E28B00BDA1EB /* StackController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DCC15481C01E1C700BDA1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DCC152C1C01E1C700BDA1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DCC15451C01E1C700BDA1EB;
+			remoteInfo = "CM_Picker WatchKit App";
+		};
+		2DCC15571C01E1C700BDA1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DCC152C1C01E1C700BDA1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DCC15541C01E1C700BDA1EB;
+			remoteInfo = "CM_Picker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DCC15661C01E1C700BDA1EB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2DCC15561C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC156A1C01E1C700BDA1EB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2DCC15471C01E1C700BDA1EB /* CM_Picker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2DA72BCA1C03B4A8001E3156 /* CoordinatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorController.swift; sourceTree = "<group>"; };
+		2DCC15341C01E1C700BDA1EB /* CM_Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM_Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCC15371C01E1C700BDA1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DCC15391C01E1C700BDA1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DCC153C1C01E1C700BDA1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DCC153E1C01E1C700BDA1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DCC15411C01E1C700BDA1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DCC15431C01E1C700BDA1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCC15461C01E1C700BDA1EB /* CM_Picker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM_Picker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCC154C1C01E1C700BDA1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2DCC154E1C01E1C700BDA1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DCC15501C01E1C700BDA1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCC15551C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CM_Picker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCC155A1C01E1C700BDA1EB /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		2DCC155C1C01E1C700BDA1EB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2DCC155E1C01E1C700BDA1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DCC15601C01E1C700BDA1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCC156E1C01E28B00BDA1EB /* SequenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceController.swift; sourceTree = "<group>"; };
+		2DCC156F1C01E28B00BDA1EB /* StackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DCC15311C01E1C700BDA1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC15521C01E1C700BDA1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DCC152B1C01E1C700BDA1EB = {
+			isa = PBXGroup;
+			children = (
+				2DCC15361C01E1C700BDA1EB /* CM_Picker */,
+				2DCC154A1C01E1C700BDA1EB /* CM_Picker WatchKit App */,
+				2DCC15591C01E1C700BDA1EB /* CM_Picker WatchKit Extension */,
+				2DCC15351C01E1C700BDA1EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DCC15351C01E1C700BDA1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC15341C01E1C700BDA1EB /* CM_Picker.app */,
+				2DCC15461C01E1C700BDA1EB /* CM_Picker WatchKit App.app */,
+				2DCC15551C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DCC15361C01E1C700BDA1EB /* CM_Picker */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC15371C01E1C700BDA1EB /* AppDelegate.swift */,
+				2DCC15391C01E1C700BDA1EB /* ViewController.swift */,
+				2DCC153B1C01E1C700BDA1EB /* Main.storyboard */,
+				2DCC153E1C01E1C700BDA1EB /* Assets.xcassets */,
+				2DCC15401C01E1C700BDA1EB /* LaunchScreen.storyboard */,
+				2DCC15431C01E1C700BDA1EB /* Info.plist */,
+			);
+			path = CM_Picker;
+			sourceTree = "<group>";
+		};
+		2DCC154A1C01E1C700BDA1EB /* CM_Picker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC154B1C01E1C700BDA1EB /* Interface.storyboard */,
+				2DCC154E1C01E1C700BDA1EB /* Assets.xcassets */,
+				2DCC15501C01E1C700BDA1EB /* Info.plist */,
+			);
+			path = "CM_Picker WatchKit App";
+			sourceTree = "<group>";
+		};
+		2DCC15591C01E1C700BDA1EB /* CM_Picker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC155E1C01E1C700BDA1EB /* Assets.xcassets */,
+				2DA72BCA1C03B4A8001E3156 /* CoordinatorController.swift */,
+				2DCC155C1C01E1C700BDA1EB /* ExtensionDelegate.swift */,
+				2DCC15601C01E1C700BDA1EB /* Info.plist */,
+				2DCC155A1C01E1C700BDA1EB /* ListController.swift */,
+				2DCC156E1C01E28B00BDA1EB /* SequenceController.swift */,
+				2DCC156F1C01E28B00BDA1EB /* StackController.swift */,
+			);
+			path = "CM_Picker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DCC15331C01E1C700BDA1EB /* CM_Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DCC156B1C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker" */;
+			buildPhases = (
+				2DCC15301C01E1C700BDA1EB /* Sources */,
+				2DCC15311C01E1C700BDA1EB /* Frameworks */,
+				2DCC15321C01E1C700BDA1EB /* Resources */,
+				2DCC156A1C01E1C700BDA1EB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DCC15491C01E1C700BDA1EB /* PBXTargetDependency */,
+			);
+			name = CM_Picker;
+			productName = CM_Picker;
+			productReference = 2DCC15341C01E1C700BDA1EB /* CM_Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DCC15451C01E1C700BDA1EB /* CM_Picker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DCC15671C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker WatchKit App" */;
+			buildPhases = (
+				2DCC15441C01E1C700BDA1EB /* Resources */,
+				2DCC15661C01E1C700BDA1EB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DCC15581C01E1C700BDA1EB /* PBXTargetDependency */,
+			);
+			name = "CM_Picker WatchKit App";
+			productName = "CM_Picker WatchKit App";
+			productReference = 2DCC15461C01E1C700BDA1EB /* CM_Picker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2DCC15541C01E1C700BDA1EB /* CM_Picker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DCC15631C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker WatchKit Extension" */;
+			buildPhases = (
+				2DCC15511C01E1C700BDA1EB /* Sources */,
+				2DCC15521C01E1C700BDA1EB /* Frameworks */,
+				2DCC15531C01E1C700BDA1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CM_Picker WatchKit Extension";
+			productName = "CM_Picker WatchKit Extension";
+			productReference = 2DCC15551C01E1C700BDA1EB /* CM_Picker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DCC152C1C01E1C700BDA1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "WhiteTiger \"sgama la rete\"";
+				TargetAttributes = {
+					2DCC15331C01E1C700BDA1EB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DCC15451C01E1C700BDA1EB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2DCC15541C01E1C700BDA1EB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2DCC152F1C01E1C700BDA1EB /* Build configuration list for PBXProject "CM_Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DCC152B1C01E1C700BDA1EB;
+			productRefGroup = 2DCC15351C01E1C700BDA1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DCC15331C01E1C700BDA1EB /* CM_Picker */,
+				2DCC15451C01E1C700BDA1EB /* CM_Picker WatchKit App */,
+				2DCC15541C01E1C700BDA1EB /* CM_Picker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DCC15321C01E1C700BDA1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC15421C01E1C700BDA1EB /* LaunchScreen.storyboard in Resources */,
+				2DCC153F1C01E1C700BDA1EB /* Assets.xcassets in Resources */,
+				2DCC153D1C01E1C700BDA1EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC15441C01E1C700BDA1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC154F1C01E1C700BDA1EB /* Assets.xcassets in Resources */,
+				2DCC154D1C01E1C700BDA1EB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC15531C01E1C700BDA1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC155F1C01E1C700BDA1EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DCC15301C01E1C700BDA1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC153A1C01E1C700BDA1EB /* ViewController.swift in Sources */,
+				2DCC15381C01E1C700BDA1EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC15511C01E1C700BDA1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC155D1C01E1C700BDA1EB /* ExtensionDelegate.swift in Sources */,
+				2DCC15701C01E28B00BDA1EB /* SequenceController.swift in Sources */,
+				2DCC15711C01E28B00BDA1EB /* StackController.swift in Sources */,
+				2DCC155B1C01E1C700BDA1EB /* ListController.swift in Sources */,
+				2DA72BCB1C03B4A8001E3156 /* CoordinatorController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DCC15491C01E1C700BDA1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DCC15451C01E1C700BDA1EB /* CM_Picker WatchKit App */;
+			targetProxy = 2DCC15481C01E1C700BDA1EB /* PBXContainerItemProxy */;
+		};
+		2DCC15581C01E1C700BDA1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DCC15541C01E1C700BDA1EB /* CM_Picker WatchKit Extension */;
+			targetProxy = 2DCC15571C01E1C700BDA1EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DCC153B1C01E1C700BDA1EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCC153C1C01E1C700BDA1EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DCC15401C01E1C700BDA1EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCC15411C01E1C700BDA1EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DCC154B1C01E1C700BDA1EB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCC154C1C01E1C700BDA1EB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DCC15611C01E1C700BDA1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DCC15621C01E1C700BDA1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DCC15641C01E1C700BDA1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CM_Picker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DCC15651C01E1C700BDA1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CM_Picker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DCC15681C01E1C700BDA1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_Picker_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_Picker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DCC15691C01E1C700BDA1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CM_Picker_WatchKit_Extension;
+				INFOPLIST_FILE = "CM_Picker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2DCC156C1C01E1C700BDA1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_Picker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DCC156D1C01E1C700BDA1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CM_Picker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-Picker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DCC152F1C01E1C700BDA1EB /* Build configuration list for PBXProject "CM_Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCC15611C01E1C700BDA1EB /* Debug */,
+				2DCC15621C01E1C700BDA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DCC15631C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCC15641C01E1C700BDA1EB /* Debug */,
+				2DCC15651C01E1C700BDA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DCC15671C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCC15681C01E1C700BDA1EB /* Debug */,
+				2DCC15691C01E1C700BDA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DCC156B1C01E1C700BDA1EB /* Build configuration list for PBXNativeTarget "CM_Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCC156C1C01E1C700BDA1EB /* Debug */,
+				2DCC156D1C01E1C700BDA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DCC152C1C01E1C700BDA1EB /* Project object */;
+}
