@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="133.5" height="22.5" alignment="left" text="Label" textAlignment="center" id="vtd-q0-yf4"/>
+                        <button width="1" alignment="left" title="Premi" id="KXB-3B-DBn">
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="B9F-R9-krp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblMessaggio" destination="vtd-q0-yf4" id="Fgu-P7-Vso"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="340" y="371"/>
+        </scene>
+    </scenes>
+</document>
