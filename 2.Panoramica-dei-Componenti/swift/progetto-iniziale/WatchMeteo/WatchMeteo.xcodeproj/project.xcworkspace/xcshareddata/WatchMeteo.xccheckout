@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>20F805FA-4523-4454-A693-F203E108EBA9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82E38FFEFA43270B31F487DA806CAFCF09D844FD</key>
+		<string>https://bitbucket.org/theSwanCoder/applewatchmeteo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>objC/WatchMeteo/WatchMeteo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82E38FFEFA43270B31F487DA806CAFCF09D844FD</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/theSwanCoder/applewatchmeteo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82E38FFEFA43270B31F487DA806CAFCF09D844FD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82E38FFEFA43270B31F487DA806CAFCF09D844FD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>applewatchmeteo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
