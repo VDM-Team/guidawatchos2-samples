@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" text="Meteo" id="53f-kL-gFD"/>
+                        <button width="1" alignment="left" title="Cerca" id="nDm-zk-dsx">
+                            <connections>
+                                <action selector="btnSearchPressed" destination="AgC-eL-Hgc" id="sjb-bN-xYD"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="NMW-J0-ncS">
+                            <items>
+                                <tableRow identifier="PlaceRow" id="GdC-b5-QVE" customClass="PlaceRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="drh-PE-Ity">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Posizione" id="2VT-Q6-RA4">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblPlace" destination="2VT-Q6-RA4" id="1gF-Lq-d3P"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblPlaces" destination="NMW-J0-ncS" id="5fT-7I-i4q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-21" y="1"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="zCH-bK-MIM">
+            <objects>
+                <glanceController id="jtp-ZX-Da1" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" layout="vertical" id="f9F-nr-Kbj">
+                            <items>
+                                <label alignment="left" text="Luogo" id="MLH-2D-jN3">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                </label>
+                                <label alignment="left" text="data" id="B5x-J3-4GI">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="7sQ-8g-edy">
+                            <items>
+                                <imageView width="50" height="50" alignment="center" image="Activity1" contentMode="center" id="AjF-63-soA"/>
+                                <label alignment="center" text="attendi..." id="P3f-fP-Ndj"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imgBody" destination="AjF-63-soA" id="lPk-M6-r4z"/>
+                        <outlet property="lblDate" destination="B5x-J3-4GI" id="a42-Uh-cO0"/>
+                        <outlet property="lblDescription" destination="P3f-fP-Ndj" id="6Lh-bq-g3A"/>
+                        <outlet property="lblPlace" destination="MLH-2D-jN3" id="T1q-t8-DkK"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="-262" y="15"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="IQk-lp-ptt">
+            <objects>
+                <notificationController id="le1-pW-QjT">
+                    <items>
+                        <label alignment="center" text="Alert Label" id="8QC-wJ-BV7">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="bGJ-z9-Vbd"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="8QC-wJ-BV7" id="Gdt-iY-dQa"/>
+                        <segue destination="KGJ-84-pNB" kind="relationship" relationship="dynamicNotificationInterface" id="aPh-00-hGc"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-281" y="361"/>
+        </scene>
+        <!--WeatherInterfaceController-->
+        <scene sceneID="EmT-5a-ifT">
+            <objects>
+                <controller identifier="WeatherInterfaceController" id="3hN-0d-QyJ" customClass="WeatherInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="E3V-i3-aCy">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" contentMode="scaleAspectFit" id="IHp-Ky-6sg"/>
+                                <label width="1" widthAdjustment="-50" alignment="left" text="luogo" numberOfLines="0" id="ba9-5o-hq2">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="center" image="Activity1" id="AD2-om-gmn"/>
+                        <label alignment="center" text="attendi..." id="TCq-LK-eHQ"/>
+                        <picker height="70" alignment="left" focusStyle="stack" id="6hu-hA-7SE">
+                            <connections>
+                                <action selector="pckDateValueDidChange:" destination="3hN-0d-QyJ" id="0ft-AN-3MI"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <menu key="menu" id="Kwm-Vz-xXh">
+                        <items>
+                            <menuItem title="Aggiorna" icon="repeat" id="xcq-AC-5yH">
+                                <connections>
+                                    <action selector="menuitemPressed" destination="3hN-0d-QyJ" id="yMo-by-nPl"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="imgActivity" destination="AD2-om-gmn" id="4k1-3y-TyJ"/>
+                        <outlet property="imgWeather" destination="IHp-Ky-6sg" id="s1h-cb-1QP"/>
+                        <outlet property="lblDescription" destination="TCq-LK-eHQ" id="rFG-Uw-QA8"/>
+                        <outlet property="lblPlace" destination="ba9-5o-hq2" id="CzX-p2-DRO"/>
+                        <outlet property="pckDate" destination="6hu-hA-7SE" id="FDd-ho-mkh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="216" y="1"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ppU-6V-zoz">
+            <objects>
+                <controller id="KGJ-84-pNB" customClass="NotificationController">
+                    <items>
+                        <label alignment="left" text="Label" id="Mk1-Mg-Jhw">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <label alignment="left" text="Label" id="6oD-9t-dyg"/>
+                        <imageView width="50" height="50" alignment="center" id="wNo-3w-1S9"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgBody" destination="wNo-3w-1S9" id="Xad-wb-nNE"/>
+                        <outlet property="lblMessage" destination="6oD-9t-dyg" id="HXU-vx-3sU"/>
+                        <outlet property="lblTitle" destination="Mk1-Mg-Jhw" id="oSu-qF-h3r"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-73" y="361"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.80392156859999997" green="0.22352941179999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+</document>

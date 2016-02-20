@@ -1,0 +1,18 @@
+{
+	"aps":
+	{
+		"alert":
+		{	"title":"Roma",
+			"body":"sereno"
+		},
+		"category":"Wheater"
+	},
+	"icon":"01d",
+	"WatchKit Simulator Actions":
+	[
+		{
+			"title":"Apri",
+			"identifier":"viewWeatherAction"
+		}
+	]
+}
