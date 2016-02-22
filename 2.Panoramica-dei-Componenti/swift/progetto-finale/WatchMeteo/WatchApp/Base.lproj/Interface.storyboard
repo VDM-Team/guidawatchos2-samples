@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="center" text="Meteo" id="53f-kL-gFD"/>
+                        <button width="1" alignment="left" title="Cerca" id="nDm-zk-dsx">
+                            <connections>
+                                <action selector="btnSearchPressed" destination="AgC-eL-Hgc" id="sjb-bN-xYD"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="NMW-J0-ncS">
+                            <items>
+                                <tableRow identifier="PlaceRow" id="GdC-b5-QVE" customClass="PlaceRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="drh-PE-Ity">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Posizione" id="2VT-Q6-RA4">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblPlace" destination="2VT-Q6-RA4" id="GTW-v6-FG3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblPlaces" destination="NMW-J0-ncS" id="4kW-B0-QmR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-21" y="1"/>
+        </scene>
+        <!--WeatherInterfaceController-->
+        <scene sceneID="EmT-5a-ifT">
+            <objects>
+                <controller identifier="WeatherInterfaceController" id="3hN-0d-QyJ" customClass="WeatherInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="E3V-i3-aCy">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" contentMode="scaleAspectFit" id="IHp-Ky-6sg"/>
+                                <label width="1" widthAdjustment="-50" alignment="left" text="luogo" numberOfLines="0" id="ba9-5o-hq2">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="center" image="Activity1" id="AD2-om-gmn"/>
+                        <label alignment="center" text="attendi..." id="TCq-LK-eHQ"/>
+                        <picker height="70" alignment="left" focusStyle="stack" id="6hu-hA-7SE">
+                            <connections>
+                                <action selector="pckDateValueDidChange:" destination="3hN-0d-QyJ" id="0ft-AN-3MI"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <menu key="menu" id="Kwm-Vz-xXh">
+                        <items>
+                            <menuItem title="Aggiorna" icon="repeat" id="xcq-AC-5yH">
+                                <connections>
+                                    <action selector="menuitemPressed" destination="3hN-0d-QyJ" id="yMo-by-nPl"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="imgActivity" destination="AD2-om-gmn" id="V13-y9-d47"/>
+                        <outlet property="imgWeather" destination="IHp-Ky-6sg" id="kNB-zV-ZFA"/>
+                        <outlet property="lblDescription" destination="TCq-LK-eHQ" id="nFH-Ry-djN"/>
+                        <outlet property="lblPlace" destination="ba9-5o-hq2" id="0zw-LW-fvO"/>
+                        <outlet property="pckDate" destination="6hu-hA-7SE" id="Xqc-MM-Xmk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="216" y="1"/>
+        </scene>
+    </scenes>
+</document>

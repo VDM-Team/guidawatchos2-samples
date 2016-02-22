@@ -21,8 +21,6 @@
 	NSAssert([APIKEY isEqualToString:@"INSERISCI QUI LA TUA API KEY"] == NO, @"per utilizzare l'applicazione devi registrarti su openweathermap.com e recuperare la tua API KEY inserendola nella define alla riga 16");
 	NSString* queryString = [NSString stringWithFormat:BASE_QUERY_STRING,place,APIKEY];
 	
-	
-	
 	NSString* urlString = [NSString stringWithFormat:@"%@/%@?%@",BASE_URL,WEATHER_FUNCTION,queryString];
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSURL* url = [NSURL URLWithString:urlString];
