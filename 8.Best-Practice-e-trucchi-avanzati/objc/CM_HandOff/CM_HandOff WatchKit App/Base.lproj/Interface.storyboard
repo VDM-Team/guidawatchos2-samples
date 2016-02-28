@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10112" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bsU-sd-K9S">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="mUi-JT-Lww">
+            <objects>
+                <controller id="bsU-sd-K9S" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Option 1" id="jh3-ah-hYn">
+                            <connections>
+                                <action selector="actionOption1:" destination="bsU-sd-K9S" id="t9i-6G-bgP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Option 2" id="qXU-dm-jEX">
+                            <connections>
+                                <action selector="actionOption2:" destination="bsU-sd-K9S" id="lDq-EQ-JpJ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Option 3" id="TGS-bt-APq">
+                            <connections>
+                                <action selector="actionOption3:" destination="bsU-sd-K9S" id="AaY-V1-ROh"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

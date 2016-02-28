@@ -429,7 +429,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "CM_HF WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -443,7 +443,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "CM_HF WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -459,7 +459,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = CM_HF_WatchKit_Extension;
 				INFOPLIST_FILE = "CM_HF WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -475,7 +475,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = CM_HF_WatchKit_Extension;
 				INFOPLIST_FILE = "CM_HF WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -491,7 +491,7 @@
 				INFOPLIST_FILE = CM_HF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,7 +503,7 @@
 				INFOPLIST_FILE = CM_HF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.reply.CM-HF";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.book.CM-HF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -527,6 +527,7 @@
 				2D8CBC7F1BE94A3900FDE1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D8CBC811BE94A3900FDE1F1 /* Build configuration list for PBXNativeTarget "CM_HF WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +536,7 @@
 				2D8CBC831BE94A3900FDE1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D8CBC851BE94A3900FDE1F1 /* Build configuration list for PBXNativeTarget "CM_HF" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +545,7 @@
 				2D8CBC871BE94A3900FDE1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

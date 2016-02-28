@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10112" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFJ-hT-fqY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Haptic-->
+        <scene sceneID="2Z5-O0-ZOx">
+            <objects>
+                <controller identifier="MainController" title="Haptic" alwaysBounce="YES" id="eFJ-hT-fqY" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Notification" id="jvp-vi-INs">
+                            <connections>
+                                <action selector="actionHaptickNotification:" destination="eFJ-hT-fqY" id="gQm-pY-bTe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Direction UP" id="NiF-cu-rzA">
+                            <connections>
+                                <action selector="actionHaptickDirectionUP:" destination="eFJ-hT-fqY" id="eBI-GX-OCB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Direction DOWN" id="BDO-Hd-mp3">
+                            <connections>
+                                <action selector="actionHaptickDirectionDown:" destination="eFJ-hT-fqY" id="sIg-HV-aTM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Success" id="jwP-5E-Rxr">
+                            <connections>
+                                <action selector="actionHaptickSuccess:" destination="eFJ-hT-fqY" id="TcI-kn-ihU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Failure" id="sci-P3-fB9">
+                            <connections>
+                                <action selector="actionHaptickFailure:" destination="eFJ-hT-fqY" id="Jba-Om-bgN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Retry" id="tsn-7v-FEL">
+                            <connections>
+                                <action selector="actionHaptickRetry:" destination="eFJ-hT-fqY" id="kJ8-h2-lQb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Start" id="akf-zM-0nX">
+                            <connections>
+                                <action selector="actionHaptickStart:" destination="eFJ-hT-fqY" id="Pl6-WR-ish"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="HDb-Ss-pVS">
+                            <connections>
+                                <action selector="actionHaptickStop:" destination="eFJ-hT-fqY" id="jKh-fr-h86"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Click" id="8Yb-hK-YXC">
+                            <connections>
+                                <action selector="actionHaptickClick:" destination="eFJ-hT-fqY" id="E21-Lc-XMg"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="607" y="436.25"/>
+        </scene>
+    </scenes>
+</document>
